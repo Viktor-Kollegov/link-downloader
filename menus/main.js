@@ -29,7 +29,7 @@ module.exports = async (bot, ctx, result) => {
         disable_web_page_preview: true,
         reply_markup: JSON.stringify({
             inline_keyboard: [
-                ...(result.description ? [{ text: 'View description', callback_data: 'description' }] : []),
+                ...(result.description ? [[{ text: 'View description', callback_data: 'description' }]] : []),
                 [{ text: `Download medias`, callback_data: 'downloads' }],
                 [{ text: `Download thumbnails`, callback_data: 'thumbnails' }],
             ]
