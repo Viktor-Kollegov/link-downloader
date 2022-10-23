@@ -10,7 +10,7 @@ module.exports = async (bot, ctx, result) => {
             if(media.video_ext !== 'none') ext += media.video_ext
 
             inline_keyboard.push([{
-                text: `${ext ? '['+ext+'] ' : ''} ${media.format}` + (media.audio_ext === 'none' ? ' (no audio)' : ''),
+                text: `${ext ? '['+ext+'] ' : ''} ${media.format}`,
                 callback_data: `media_${media.format_id}`
             }])
         }
