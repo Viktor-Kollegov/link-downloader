@@ -9,6 +9,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.command('start', ctx => {
     ctx.replyWithMarkdown('Welcome to the Link Downloader bot !' +
         '\n\nWith this bot, you can download any media from a link (ex. youtube, soundcloud, etc...).' +
+        '\n\n👉️ Contact @TgBotsXyz to get your custom telegram bots !' +
         '\n\n*Instructions :*' +
         '\n\n/convert get medias from a link')
 })
